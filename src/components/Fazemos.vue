@@ -3,12 +3,13 @@
 		<b-col class="col-12 servicos-banner">
 			<h4 class="servicos-header text-center">NOSSOS SERVIÇOS</h4>
 		</b-col>
+		<div class="espaco"></div>
 		<b-col class="col-xs-12 col-sm-6 servico">
 			<h4 class="text-left servico-title">Projeto de combate a Incêndio;</h4>
 			<div class="servico-border" :style="{background: '#cc2928', width: '2%', height: '2px'}"></div>
 			<h4 class="text-left servico-title">Acompanhamento de Vistoria;</h4>
 			<div class="servico-border" :style="{background: '#cc2928', width: '2%', height: '2px'}"></div>
-			<h4 class="text-left servico-title">Execução e Manutenção de Sistemas (Hidrantes, Sprinklers, Gás GLP e GN, Detecção e Alarme de Incêndio);</h4>
+			<h4 class="text-left servico-title">Execução e Manutenção de Sistemas (Hidrantes, Sprinklers, SPDA, Gás GLP e GN, Detecção e Alarme de Incêndio);</h4>
 			<div class="servico-border" :style="{background: '#cc2928', width: '2%', height: '2px'}"></div>
 			<h4 class="text-left servico-title">Consultoria para locação de Sinalização, Luminárias de Emergência, Extintores de Incêndio;</h4>
 			<div class="servico-border" :style="{background: '#cc2928', width: '2%', height: '2px'}"></div>
@@ -38,21 +39,26 @@
 		padding-top: 20px;
 		padding-bottom: 10px;
 		font-size: 3vw;
-		color: #000;
+		color: #fff;
+	}
+
+	.espaco{
+		padding: 20px;
+		width: 100%;
 	}
 
 	.servicos-banner{
-		background: #e7e7e7;
+		background: #cC2928;
 		width: 100%;
 	}
 
 	.servicos {
 		margin-top: 0px;
+		padding-bottom: 30px;
 	}
 
 	.servico {
-		padding-top: 30px;
-		padding: 40px 100px;
+		padding: 0px 100px;
 	}
 
 	.servico-title {
@@ -68,24 +74,25 @@
 			margin-top: 0px;
 		}
 
-		.oqf-header {
-			font-size: 8vw;
+		.servicos-header {
+			font-size: 15px;
 		}
 
 		.servico-title {
-			font-size: 2vw;
-		}
-
-		.servico-text {
-			font-size: 2.8vw;
+			font-size: 3vw;
 		}
 
 		.servico{
 			padding-top: 5px;
+			padding-left: 50px;
+			padding-right: 50px;
 		}
 
 		.servico-border{
 			width: 100%;
+		}
+		.espaco{
+			padding: 5px;
 		}
 	}
 </style>

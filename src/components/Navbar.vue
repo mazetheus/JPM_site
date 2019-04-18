@@ -2,12 +2,12 @@
 	<div class="topo">
 		<b-navbar toggleable="md" class="fixed-top">
 			<b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-			<b-navbar-brand to="/"><b-img :src="require('@/assets/logo.png')" fluid width="60%"></b-img></b-navbar-brand>
+			<b-navbar-brand to="/"><b-img :src="require('@/assets/logo.png')" class="logo-img" fluid width="90%"></b-img></b-navbar-brand>
 
 			<b-collapse is-nav id="nav_collapse">
 				<b-navbar-nav class="ml-auto">
 					<b-nav-item v-for="(item,index) in menu" :key="'nav-'+index" v-scroll-to="item.to">{{item.text}}</b-nav-item>
-					<b-nav-item href="https://instagram.com/aagenciadigital" target="_blank"><font-awesome-icon class="fa-icon" :icon="['fab', 'instagram']"></font-awesome-icon></b-nav-item>
+					<b-nav-item href="https://www.instagram.com/jpm_engenhariadeincendio/" target="_blank"><font-awesome-icon class="fa-icon" :icon="['fab', 'instagram']"></font-awesome-icon></b-nav-item>
 				</b-navbar-nav>
 			</b-collapse>
 		</b-navbar>
@@ -59,10 +59,10 @@
 	padding: 20px 20px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 720px) {
 	.navbar{
 		position: sticky;
-            padding: 0px 100px;
+        padding: 0px 50px;
 	}
 
 	.navbar-collapse {
@@ -73,8 +73,9 @@
 		color: #000 !important;
 	}
 
-      .navbar-brand {
-            padding: 10px 20px;
-      }
+	.navbar-brand {
+		width: 40%;
+		padding: 5px 20px;
+	}
 }
 </style>

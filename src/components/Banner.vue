@@ -1,7 +1,7 @@
 <template>
-	<div class="">
-		<h2 class="centered description">Simplifique o seu AVCB,<br>priorize a sua segurança.</h2>
-		<img :src="require('../assets/banner.png')" class="img-fluid topo-img" width="100%" alt="Responsive image">
+	<div class="banner-texto">
+		<h1 class="centered description">Simplifique o seu AVCB,<br>priorize a sua segurança.</h1>
+		<img :src="require('../assets/banner.png')" class="img-fluid topo-img" style="width:100%;" alt="Responsive image">
 	</div>
 </template>
 
@@ -13,9 +13,12 @@
 		padding: 0px;
 	}
 
-  .container {
-    text-align: center;
-  }
+  .banner-texto {
+		position: relative;
+		text-align: center;
+		width: 100%;
+		color: white;
+	}
 
 	.centered {
 		position: absolute;
@@ -24,13 +27,12 @@
 		transform: translate(-50%, -50%);
 		color: white;
 	}
-	
+
+
 	@media (max-width: 720px) {
 		.description{
-				font-size: 20px;
-				padding-bottom: 120px;
+				font-size: 15px;
 		}
-
 	}
 
 </style>

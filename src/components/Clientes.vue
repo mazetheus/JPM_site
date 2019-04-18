@@ -5,9 +5,9 @@
 		</b-col>
 		<b-col class="col-12 cliente">
 			<div>
-				<h4 class="descricao text-left">
+				<h4 class="descricao text-center">
 					
-				Segmento {{ segmentos[slide] }}<br />
+				SEGMENTO {{ segmentos[slide] }}<br />
 				</h4>
 
 				<b-carousel
@@ -32,6 +32,9 @@
 						:img-src="require('../assets/Segmento_Hospedagem.png')"/>
 
 					<b-carousel-slide
+						:img-src="require('../assets/Segmento_Comercial.png')"/>
+
+						<b-carousel-slide
 						:img-src="require('../assets/Segmento_Outros.png')"/>
 
 
@@ -46,10 +49,11 @@
 	data() {
 		return {
 			segmentos: [
-				'Industrial',
-				'Residencial',
-				'Hospedagem',
-				'Outros',
+				'INDUSTRIAL',
+				'RESIDENCIAL',
+				'HOSPEDAGEM',
+				'COMERCIAL',
+				'OUTROS',
 			],
 			slide: 0,
 			sliding: null,
@@ -73,7 +77,7 @@
 		padding-top: 20px;
 		padding-bottom: 10px;
 		font-size: 3vw;
-		color: #fff;
+		color: #000;
 	}
 
 	.carousel-control-next-icon:after{
@@ -86,11 +90,10 @@
 		content: '◄';
 		font-size: 35px;
 		color: black;
-		padding-left: 
 	}
 
 	.clientes-banner{
-		background: #cc2928;
+		background: #cecece;
 		width: 100%;
 	}
 
@@ -103,18 +106,22 @@
 	}
 
 	.descricao{
-		padding-top: 10px;
-		padding-left: 20px;
+		padding-top: 20px;
+		color: #000;
+		font-size: 2vw;
 	}
 
 	@media (max-width: 576px) {
 
-		.cliente-title {
-			font-size: 3vw;
-		}
-
 		.cliente-text {
 			font-size: 2.8vw;
+		}
+		.clientes-header{
+			font-size: 15px;
+		}
+
+		.descricao{
+			font-size: 10px;
 		}
 
 		.cliente{
