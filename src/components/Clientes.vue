@@ -32,6 +32,12 @@
 						:img-src="require('../assets/Segmento_Hospedagem.png')"/>
 
 					<b-carousel-slide
+						:img-src="require('../assets/Segmento_Educacional.png')"/>
+
+					<b-carousel-slide
+						:img-src="require('../assets/Segmento_Hospitalar.png')"/>
+
+					<b-carousel-slide
 						:img-src="require('../assets/Segmento_Comercial.png')"/>
 
 						<b-carousel-slide
@@ -52,6 +58,8 @@
 				'INDUSTRIAL',
 				'RESIDENCIAL',
 				'HOSPEDAGEM',
+				'EDUCACIONAL',
+				`HOSPITALAR`,
 				'COMERCIAL',
 				'OUTROS',
 			],
